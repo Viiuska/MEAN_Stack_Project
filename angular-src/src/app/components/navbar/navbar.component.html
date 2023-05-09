@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav navbar-left">
       <li class="nav-item" *ngIf="authService.loggedIn()"  [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
-        <a class="nav-link" [routerLink]="['/dashboard']">Dashboard </a>
+        <a class="nav-link" [routerLink]="['/dashboard']">Search Books </a>
       </li>
     </ul>
 
