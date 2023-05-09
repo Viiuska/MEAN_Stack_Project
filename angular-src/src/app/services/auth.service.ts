@@ -8,10 +8,18 @@ import { tokenNotExpired } from 'angular2-jwt';
 export class AuthService {
   authToken: any;
   user: any;
+  book:any;
 
   constructor(
     private http:Http
   ) { }
+
+  newBook(book) {
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('http://localhost:3000/users/dashboard', book, {headers: headers})
+      .map(res => res.json());
+  }
 
 
   registerUser(user) {

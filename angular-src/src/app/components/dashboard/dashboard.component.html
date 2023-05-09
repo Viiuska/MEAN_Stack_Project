@@ -1,2 +1,50 @@
-<h2 class="page-header">Dashboard</h2>
-<p>Welcome to your dashboard</p>
+<div>
+    <h2 class="page-header">Book Inventory</h2>
+    <p>Welcome to your Book Inventory page, search for books by title... Or add them.</p>
+</div>
+<br>
+<div>
+    <h4>Add a book</h4>
+    <form (submit)="onBookSubmit()" >
+      <div class="form-group">
+        <label for="newBook">Title</label>
+        <input type="text" [(ngModel)]="newBook" name="newBook" class="form-control" id="newBook" placeholder="Enter Title">
+      </div>
+      <div class="form-group">
+        <label for="newAuthor">Author</label>
+        <input type="text" [(ngModel)]="newAuthor" name="newAuthor" class="form-control" id="newAuthor" placeholder="Enter Author">
+      </div>
+      <div class="form-group">
+        <label for="newGenre">Genre</label>
+        <input type="text" [(ngModel)]="newGenre" name="newGenre" class="form-control" id="newGenre" placeholder="Enter genre(s)">
+      </div>
+      <div class="form-group">
+        <label for="newDescription">Description</label>
+        <input type="text" [(ngModel)]="newDescription" name="newDescription" class="form-control" id="newDescription" placeholder=" Enter Description">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Add book">
+    </form>
+</div>
+    <br>
+    <br>
+    <br>
+<div>
+    <h4>Search</h4>
+    <form class="form-search" (submit)="onSearchSubmit()">
+        <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" class="form-control" placeholder="Enter title" [(ngModel)]="booktitle" name="booktitle">
+        </div>
+        <input class="btn btn-lg btn-primary" type="submit" value="Search"> 
+        <br>
+        <br>
+        <br>
+        
+        <ul class="list-group">
+            <li class="list-group-item">Title : {{ title }}</li>
+            <li class="list-group-item">Author : {{ author }}</li>
+            <li class="list-group-item">Genre : {{ genre }}</li>
+            <li class="list-group-item">Description : {{ desc }}</li>
+        </ul>
+    </form>
+</div>
