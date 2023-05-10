@@ -1,4 +1,4 @@
-# MEAN_Stack_Project  
+# MEAN_Stack_Project Viia Mäntymäki  
 This is my course project for Anytime-course: Software Development Skills: Full-Stack 2022-23. I have created a Wikipedia-style webpage for books *Book Hunt*.
 A registered user is able to search for books by title and add them to the book database. 
 
