@@ -9,7 +9,7 @@ Node version is 12.12.12 and Angular uses npm install -g angular-cli version.
 This project also uses older versions of the dependencies. They can be found in the package.json file. 
 
 ## HOW TO RUN  
-Open two termanila windows.  
+Open two terminal windows.  
 First window *npm start*  
 Second window *cd angular* and then *ng serve*  
 Go for example Chrome *http://localhost:4200/*
