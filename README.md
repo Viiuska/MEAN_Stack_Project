@@ -12,5 +12,5 @@ This project also uses older versions of the dependencies. They can be found in 
 ## HOW TO RUN  
 Open two terminal windows.  
 First window *npm start*  
-Second window *cd angular* and then *ng serve*  
+Second window (bash) *cd angular* and then *ng serve*  
 Go for example Chrome *http://localhost:4200/*
